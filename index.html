@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhosh G — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">Santhosh G</div>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="sun-icon">&#9728;</span>
+                <span class="moon-icon">&#9790;</span>
+            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome-section">
+        <div class="profile-image">
+            <img src="./assets/un.png" alt="Santhosh G" id="img">
+        </div>
+        <div class="section-text">
+            <p class="p1">Hello, I'm</p>
+            <h1 class="title">Santhosh G</h1>
+            <p class="p2">Web Developer &middot; Designer &middot; Programmer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assets/resume-example.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/santhosh-g-abb73031a/'" target="_blank">
+                <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com'"
+                    target="_blank">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-header">
+            <p class="p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+        </div>
+        <div class="section-container">
+            <div class="about-image">
+                <img src="./assets/un.png" alt="Profile Image" class="about-img">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-containers">
+                        <img src="./assets/experience.png" alt="Experience" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ Years<br>Frontend Developer</p>
+                    </div>
+                    <div class="details-containers">
+                        <img src="./assets/education.png" alt="Education" class="icon">
+                        <h3>Education</h3>
+                        <p>B.E. CSE<br>Bachelor Degree</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Santhosh, a passionate web developer with a knack for creating engaging and
+                        user-friendly websites. I love bringing ideas to life through clean code and thoughtful design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="section-header">
+            <p class="p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+        </div>
+        <div class="experience-container">
+            <div class="experience-card">
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li><img src="./assets/checkmark.png" alt=""> <span>HTML</span><em>Experienced</em></li>
+                    <li><img src="./assets/checkmark.png" alt=""> <span>CSS</span><em>Experienced</em></li>
+                    <li><img src="./assets/checkmark.png" alt=""> <span>JavaScript</span><em>Basic</em></li>
+                    <li><img src="./assets/checkmark.png" alt=""> <span>TypeScript</span><em>Basic</em></li>
+                    <li><img src="./assets/checkmark.png" alt=""> <span>Material UI</span><em>Intermediate</em></li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <h3>Backend Development</h3>
+                <ul>
+                    <li><img src="./assets/checkmark.png" alt=""> <span>PostgreSQL</span><em>Basic</em></li>
+                    <li><img src="./assets/checkmark.png" alt=""> <span>Node JS</span><em>Intermediate</em></li>
+                    <li><img src="./assets/checkmark.png" alt=""> <span>Express JS</span><em>Intermediate</em></li>
+                    <li><img src="./assets/checkmark.png" alt=""> <span>Git</span><em>Intermediate</em></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-header">
+            <p class="p1">My Recent</p>
+            <h1 class="title">Projects</h1>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="./assets/project-1.png" alt="Project 1" class="project-image">
+                <h3>Project One</h3>
+                <p>A brief description of Project One highlighting key features and technologies used.</p>
+                <button class="btn btn-color-1" onclick="window.open('https://github.com')">View Project</button>
+            </div>
+            <div class="project-card">
+                <img src="./assets/project-2.png" alt="Project 2" class="project-image">
+                <h3>Project Two</h3>
+                <p>A brief description of Project Two highlighting key features and technologies used.</p>
+                <button class="btn btn-color-1" onclick="window.open('https://github.com')">View Project</button>
+            </div>
+            <div class="project-card">
+                <img src="./assets/project-3.png" alt="Project 3" class="project-image">
+                <h3>Project Three</h3>
+                <p>A brief description of Project Three highlighting key features and technologies used.</p>
+                <button class="btn btn-color-1" onclick="window.open('https://github.com')">View Project</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-header">
+            <p class="p1">Get In</p>
+            <h1 class="title">Touch</h1>
+        </div>
+        <div class="contact-container">
+            <div class="contact-item">
+                <img src="./assets/email.png" alt="Email">
+                <a href="mailto:g_santhosh@outlook.com">g_santhosh@outlook.com</a>
+            </div>
+            <div class="contact-item">
+                <img src="./assets/linkedin.png" alt="LinkedIn">
+                <a href="https://www.linkedin.com/in/santhosh-g-abb73031a/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>&copy; 2026 Santhosh G. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

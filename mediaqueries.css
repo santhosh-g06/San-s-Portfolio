@@ -1,0 +1,12 @@
+/* mediaqueries.css — Additional breakpoints */
+
+/* Large screens */
+@media (min-width: 1200px) {
+    section { padding: 110px 2rem 70px; }
+    .projects-container { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Medium-large */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .projects-container { grid-template-columns: repeat(2, 1fr); }
+}
