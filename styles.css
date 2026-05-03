@@ -361,6 +361,8 @@ section {
     height: 2rem;
     width: 2rem;
     object-fit: contain;
+    background-color:var(--accent-2);
+    border-radius: 50%;
     transition: transform var(--transition), opacity var(--transition);
     opacity: 0.75;
 }
